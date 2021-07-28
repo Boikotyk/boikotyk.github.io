@@ -308,7 +308,7 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item {
-	margin-bottom: 30px;
+	margin:0 4px 30px;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
@@ -316,7 +316,7 @@ ol.type li a:hover {
 	transition: all 0.5s ease-out;
 }
 .portfolio-item:hover {
-	margin-bottom: 30px;
+	margin:0 4px 30px;
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);

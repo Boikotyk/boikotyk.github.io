@@ -20,7 +20,17 @@ function main() {
 
   	$(document).ready(function() {
   	    $("#testimonial").owlCarousel({
-        navigation : false, // Show next and prev buttons
+        navigation : false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+        });
+
+  	});
+  	$(document).ready(function() {
+  	    $("#skillse").owlCarousel({
+        navigation : true,
+        navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"], 
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true
