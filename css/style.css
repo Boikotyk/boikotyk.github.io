@@ -124,9 +124,9 @@ ul, ol {
 	color: #fff;
 }
 .btn-default {
-	color: #76818d;
+	color: #c8d1d5e8;
 	background-color: transparent;
-	border-color: #76818d;
+	border-color: #c8d1d5e8;
 	margin: 0 10px;
 	font-size: 16px;
 }
@@ -735,7 +735,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-size: 70px;
 	font-weight: 600;
 	letter-spacing: -2px;
-	color: #2c3e50;
+	color: #c8d1d5e8;
 }
 .intro .intro-body .intro-text {
 	float: left;
@@ -746,15 +746,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	margin-bottom: 40px;
-	color: #76818d;
+	color: #c8d1d5e8;
 	margin-top: 20px;
 }
 section {
 	padding: 120px 0;
 }
 header .intro-text {
-	padding-top: 300px;
-	padding-bottom: 200px;
+	padding-top: 74%;
+    padding-bottom: 10%;
 }
 #portfolio .portfolio-item {
 	margin: 0 0 30px;
