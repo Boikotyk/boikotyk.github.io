@@ -763,7 +763,7 @@ header .intro-text {
 	left: 50%;
 }
 .timeline>li {
-	margin-bottom: 100px;
+	margin-bottom: 15px;
 	min-height: 100px;
 }
 .timeline>li .timeline-panel {
