@@ -121,3 +121,15 @@ $('#nav').affix({
 
 }
 main();
+// button LoadMore
+  $(document).ready(function(){
+    $(".study_content").slice(0, 1).show();
+    $("#loadMore").on("click", function(e){
+      e.preventDefault();
+      $(".study_content:hidden").slice(0, 1).slideDown();
+      if($(".study_content:hidden").length == 0) {
+        $("#loadMore").text("No study_content").addClass("nostudy_content");
+      }
+    });
+    
+  })
