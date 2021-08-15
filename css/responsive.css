@@ -304,3 +304,8 @@
 .red_btn{
 	color: red;
 }
+.form-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 72%;
+}
