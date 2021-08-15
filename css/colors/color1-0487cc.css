@@ -71,3 +71,6 @@
 .single-blog blockquote {
 	border-left: 6px solid #e4c144;
 }
+.red_btn {
+    color: red;
+}
