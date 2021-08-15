@@ -1309,3 +1309,9 @@ section#interests {
 .loading-overlay, .content, .single-blog blockquote {
     background-color: #2a2c30;
 }
+.text-interests {
+    padding-bottom: 22px;
+}
+span.interests_name {
+    float: right;
+}
