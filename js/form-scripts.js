@@ -9,7 +9,9 @@ $("#contactForm").validator().on("submit", function (event) {
         submitForm();
     }
 });
-
+function formSuccess(){
+    submitMSG(true, "Message Submitted!")
+}
 
 function submitForm(){
     //$( "#form-submit" ).prop( "disabled", true );
@@ -22,21 +24,19 @@ function submitForm(){
         type: "POST",
         url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
+        beforeSend: function() {                     
+            $("#msgSubmit").html("Отправляем данные...");                   
+        },                 
+        success: function(text){                     
+            /* В случае удачной обработки и отправки выполнится следующий код*/                     
+            $('#msgSubmit').html(result);                     
+            console.log("ntcn"); 
+            $("#msgSubmit").html("Отправляем данные...");                
+        }  
     });
 }
 
-function formSuccess(){
-    $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
-}
+
 
 function formError(){
     $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
