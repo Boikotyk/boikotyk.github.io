@@ -734,166 +734,15 @@ ul {
 		.section-portfolio .item-portfolio img {
 			width: 100%;
 			transition: all 2s;
+			max-height: 148px;
 		}
 
 			.section-portfolio .item-portfolio:hover img {
 				transform: scale(1.3,1.3) rotate(5deg);
 			}
-
-/****  5-6 - PRICING ****/
-
-.section-pricing {
-	margin-bottom: 45px;
+.p-right .col-sm-4{
+	padding-right: 0;
 }
-
-.section-pricing .row {
-	margin-right: 0;
-	margin-left: 0;
-	text-align: center;
-}
-
-	.section-pricing .row div[class^="col-"] {
-		padding-right: 0;
-		padding-left: 0;
-
-	}
-
-		.section-pricing div[class^="col-"]:nth-child(2) .pricing-content {
-			position: relative;
-			z-index: 1;
-		}
-
-		.section-pricing .pricing-content {
-			margin-bottom: 30px;
-		}
-
-			.section-pricing .most-populaire span {
-				display: inline-block;
-				margin-bottom: -4px;
-				position: relative;
-				top: -10px;
-				padding: 3px 16px;
-				background-color: #60c250;
-				font-weight: bold;
-			}
-
-				.section-pricing .most-populaire span::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: -12px;
-					width: 12px;
-					height: 10px;
-					border-width: 5px 6px;
-					border-style: solid;
-					border-color: transparent;
-					border-right-color: #2c6f21;
-					border-bottom-color: #2c6f21;
-				}
-
-			.section-pricing .pricing-title h3 {
-				padding: 37px 0;
-				font-weight: bold;
-			}
-
-			.section-pricing .pricing-title h3.h3-most-populaire {
-				padding-top: 14px;
-			}
-
-			.section-pricing .pricing-price {
-				padding: 12px 0;
-				transition: all .3s;
-			}
-
-				.section-pricing .pricing-price .number {
-					vertical-align: middle;
-				}
-
-				.section-pricing .pricing-price .dolar,
-				.section-pricing .pricing-price .mo {
-					font-weight: bold;
-				}
-
-			.section-pricing .pricing-detail {
-				padding: 23px;
-			}
-
-				.section-pricing .pricing-detail .line-detail {
-					padding-bottom: 22px;
-				}
-
-					.section-pricing .pricing-detail .line-detail:last-child {
-						padding-bottom: 0;
-					}
-
-					.section-pricing .line-detail .new {
-						display: inline-block;
-						margin-left: 5px;
-						padding: 2px 6px;
-						font-size: 11px;
-						background-color: #60c250;
-					}
-
-			.section-pricing .pricing-buy h3 {
-				padding: 30px 0;
-				font-weight: bold;
-				transition: all .4s;
-			}
-
-				.section-pricing .pricing-content:hover .pricing-price,
-				.section-pricing .pricing-content:hover .pricing-buy {
-					text-shadow: 0 0 6px rgba(0,0,0,.7);
-				}
-
-/****  5-7 - TESTIMONIALS ****/
-
-.section-testimonials {
-	margin-bottom: 60px;
-}
-
-.section-testimonials .swiper-container {
-	cursor: move;
-}
-
-	.section-testimonials .personal-info {
-		padding-top: 20px;
-		padding-bottom: 12px;
-		text-align: center;
-	}
-
-		.section-testimonials img {
-			margin-bottom: 10px;
-			width: 103px;
-			border-radius: 50%;
-		}
-
-	.section-testimonials .personal-text {
-		padding: 20px;
-	}
-
-			.section-testimonials .fa-quote-left {
-				margin-right: 5px;
-			}
-
-			.section-testimonials .fa-quote-right {
-				margin-left: 5px;
-			}
-
-	.section-testimonials .swiper-pagination {
-		position: relative;
-		margin-top: 40px;
-	}
-
-		.section-testimonials .swiper-pagination span {
-			width: 12px;
-			height: 12px;
-			transition: all .2s;
-		}
-
-		.section-testimonials span.swiper-pagination-bullet-active {
-			transform: rotate(45deg);
-			border-radius: 0;
-		}
 
 /****  5-8 - INTERESTS ****/
 
@@ -1314,4 +1163,8 @@ section#interests {
 }
 span.interests_name {
     float: right;
+}
+.study h3{
+	top: 0;
+	margin-left: 25%;
 }

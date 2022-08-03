@@ -10,7 +10,7 @@ $(document).on('ready', function(){
 		var filter = $(this).attr('data-filter');
 		$('.section-portfolio .row > div').children().css({
 			'pointer-events':'none',
-			'opacity':'.4'
+			'opacity':'.1'
 		});
 		$('.section-portfolio .row > div').children(filter).css({
 			'pointer-events':'auto',
@@ -20,6 +20,7 @@ $(document).on('ready', function(){
 	  		$('.section-portfolio .row > div').children().css({
 	  		'pointer-events':'auto',
 	  		'opacity':'1'
+			
 	  		});
   		}
 	});
@@ -184,6 +185,21 @@ $(document).on('ready', function(){
 	/**** WOW-ANIMATE ****/
 	new WOW().init();
 
+	function getAge(dateString) {
+		var today = new Date();
+		var birthDate = new Date(dateString);
+		var age = today.getFullYear() - birthDate.getFullYear();
+		var m = today.getMonth() - birthDate.getMonth();
+		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+			age--;
+		}
+		return age;
+	}
+	//console.log(getAge("1996/04/26"));
+	
+	window.addEventListener("load", function (){
+		document.getElementById('infoAge').innerHTML = getAge("1996/04/26");
+		},false);
 });
 
 /**** LOADER ****/
@@ -192,3 +208,4 @@ $(window).on('load', function()
   $("body").css("overflow","auto");
   $(".loading-overlay, .loading-overlay").fadeOut();
 });
+
