@@ -81,6 +81,7 @@ ul {
 	font-size: 40px;
 }
 
+
 .menu .logo {
 	font-size: 38px;
 }
@@ -200,7 +201,7 @@ ul {
 
 .menu {
 	position: fixed;
-	left: -160px;
+	/* left: -160px; */
 	padding-top: 30px;
 	width: 160px;
 	height: 100%;
@@ -403,12 +404,14 @@ ul {
 /****  5 - CONTAINER ****/
 
 /****  5-1 - ABOUT ****/
-
+i.fa.fa-check.green_btn {
+    color: green;
+}
 .section-about {
 	margin-top: 80px;
 	margin-bottom: 75px;
 }
-
+    
 	.section-about .profile {
 		padding: 33px 33px 22px;
 	}
@@ -422,7 +425,9 @@ ul {
 				width: 100%;
 				box-shadow: 0 0 5px rgba(0,0,0,.4);
 			}
-
+	.download-resume {
+		background-color: #e4c144;
+	}
 	.section-about .download-resume {
 		margin-bottom: 25px;
 		padding: 17px 5px;
@@ -430,6 +435,7 @@ ul {
 		box-shadow: 0 0 5px rgba(0,0,0,.4);
 		transition: all .3s;
 	}
+	
 
 		.section-about .download-resume:hover {
 			box-shadow: 0 0 8px rgba(0,0,0,.30),0 0 12px rgba(0,0,0,.20);
@@ -1142,6 +1148,17 @@ section#interests {
 	.section-contact-us .social-links {
 		text-align: center;
 		box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+	}
+	.personal-info {
+		width: 50%;
+		text-align: center;
+		/* display: block; */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.personal-social-links i.fa {
+		font-size: 34px;
 	}
 
 		.section-contact-us .social-links li {

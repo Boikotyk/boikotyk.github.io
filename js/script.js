@@ -91,16 +91,16 @@ $(document).on('ready', function(){
 	});
 
 	//open and close menu
-	 $('.menu .open-menu').on('click', function(){
-	 	if($('.menu').css('left') == '-160px'){
-	 		$('.menu').css('left','0px');
-	 		$('.menu .open-menu i').attr('class','fa fa-times');
-	 	}
-	 	else if($('.menu').css('left') == '0px'){
-	 		$('.menu').css('left','-160px');
-	 		$('.menu .open-menu i').attr('class','fa fa-bars');
-	 	}
-	 });
+	//  $('.menu .open-menu').on('click', function(){
+	//  	if($('.menu').css('left') == '-160px'){
+	//  		$('.menu').css('left','0px');
+	//  		$('.menu .open-menu i').attr('class','fa fa-times');
+	//  	}
+	//  	else if($('.menu').css('left') == '0px'){
+	//  		$('.menu').css('left','-160px');
+	//  		$('.menu .open-menu i').attr('class','fa fa-bars');
+	//  	}
+	//  });
 
 	/**** SCROLL FUNCTION  ****/
 	$(window).on('scroll', function(){
