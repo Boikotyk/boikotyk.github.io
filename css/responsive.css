@@ -6,12 +6,35 @@
 }
 
 /**** Small Screen ****/
+@media (max-width: 1346px)
+{
+	.menu {
+		display: none;
+	}
+}
+@media (max-width: 767px)
+{
+	.personal-info {
+		width: 100%;
+		text-align: center;
+		/* display: block; */
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 
 @media (min-width: 767px) and (max-width: 991px)
 {
-
+    .personal-info {
+		width: 100%;
+		text-align: center;
+		/* display: block; */
+		margin-left: auto;
+		margin-right: auto;
+	}
 	/**** 5-1 - ABOUT ****/
-
+    
 	.section-about .title-info {
 		width: 65px;
 	}
@@ -210,7 +233,7 @@
 	}
 
 	.section-about h2 {
-		font-size: 35px;
+		font-size: 28px;
 	}
 
 	/**** 5-2 - SKILLS ****/
